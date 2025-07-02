@@ -29,14 +29,22 @@ This model classifies images into two genders: Male or Female. It uses a fine-tu
 
 ### 1. Train
 ```bash
-python src/train.py --val_path path/to/train --model_path saved_models/gender_classifier_v1.pth
+!python /content/drive/MyDrive/Comsys_Hackathon5/Task_A_Gender_Classification/src/train.py 
 ```
 ### 2. Evaluation
 ```bash
-python src/eval.py --val_path path/to/val --model_path saved_models/gender_classifier_v1.pth
+!python /content/drive/MyDrive/Comsys_Hackathon5/Task_A_Gender_Classification/src/eval.py \
+--val_path "/content/drive/MyDrive/Comys_Hackathon5/Task_A/val" \
+--model_path "/content/drive/MyDrive/Comsys_Hackathon5/Task_A_Gender_Classification/saved_models/gender_classifier_v1.pth"
 ```
 ### 3. Final Test Script
 ```bash
-python src/test_task_a.py --val_path path/to/val --model_path saved_models/gender_classifier_v1.pth
+!python /content/drive/MyDrive/Comsys_Hackathon5/Task_A_Gender_Classification/src/test_task_a.py \
+--val_path "/content/drive/MyDrive/Comys_Hackathon5/Task_A/val" \
+--model_path "/content/drive/MyDrive/Comsys_Hackathon5/Task_A_Gender_Classification/saved_models/gender_classifier_v1.pth"
 ```
+
+## Outputs
+- `classification_report.txt`: Shows Accuracy, Precision, Recall, F1-Score.
+- `confusion_matrix.png`: Shows Visual Matrix.
 
