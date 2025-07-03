@@ -7,6 +7,8 @@ if __name__ == "__main__":
                         help="Path to validation data (with 'male/' and 'female/' subfolders)")
     parser.add_argument("--model_path", type=str, required=True,
                         help="Path to the trained model (.pth file)")
+    parser.add_argument('--results_dir', type=str, required=True, 
+                        help='Directory to save evaluation reports')
 
     args = parser.parse_args()
-    evaluate_model(args.val_path, args.model_path)
+    evaluate_model(args.val_path, args.model_path, args.results_dir)
