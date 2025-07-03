@@ -25,26 +25,38 @@ This model classifies images into two genders: Male or Female. It uses a fine-tu
 - sklearn
 - matplotlib
 
+## Installation 
+To run this task, you need to install the following packages
+```bash
+pip install torch
+pip install torchvision
+pip install scikit-learn
+pip install matplotlib
+```
+
 ## How to Use
 
 ### 1. Train
 ```bash
-!python /content/drive/MyDrive/Comsys_Hackathon5/Task_A_Gender_Classification/src/train.py 
+python /content/drive/MyDrive/Comsys_Hackathon5/Task_A_Gender_Classification/src/train.py 
 ```
 ### 2. Evaluation
 ```bash
-!python /content/drive/MyDrive/Comsys_Hackathon5/Task_A_Gender_Classification/src/eval.py \
+python /content/drive/MyDrive/Comsys_Hackathon5/Task_A_Gender_Classification/src/eval.py \
 --val_path "/content/drive/MyDrive/Comys_Hackathon5/Task_A/val" \
---model_path "/content/drive/MyDrive/Comsys_Hackathon5/Task_A_Gender_Classification/saved_models/gender_classifier_v1.pth"
+--model_path "/content/drive/MyDrive/Comsys_Hackathon5/Task_A_Gender_Classification/saved_models/gender_classifier_v1.pth" \
+--results_dir "/content/drive/MyDrive/Comsys_Hackathon5/Task_A_Gender_Classification/results"
 ```
 ### 3. Final Test Script
 ```bash
-!python /content/drive/MyDrive/Comsys_Hackathon5/Task_A_Gender_Classification/src/test_task_a.py \
+python /content/drive/MyDrive/Comsys_Hackathon5/Task_A_Gender_Classification/src/test_task_a.py \
 --val_path "/content/drive/MyDrive/Comys_Hackathon5/Task_A/val" \
---model_path "/content/drive/MyDrive/Comsys_Hackathon5/Task_A_Gender_Classification/saved_models/gender_classifier_v1.pth"
+--model_path "/content/drive/MyDrive/Comsys_Hackathon5/Task_A_Gender_Classification/saved_models/gender_classifier_v1.pth" \
+--results_dir "/content/drive/MyDrive/Comsys_Hackathon5/Task_A_Gender_Classification/results"
 ```
 
 ## Outputs
 - `classification_report.txt`: Shows Accuracy, Precision, Recall, F1-Score.
+- `classification_report.json`: machine-readable report
 - `confusion_matrix.png`: Shows Visual Matrix.
 
