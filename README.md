@@ -42,7 +42,7 @@ All models are built using **PyTorch** and **Facenet-PyTorch**, trained and eval
 └── .gitattributes
 
 
- 📌 **Task A** \
+ 📌 **Task A** 
  
      📈Overview: Task A classifies gender (male / female) from face images using a fine-tuned ResNet-18 model.
      
@@ -53,7 +53,7 @@ All models are built using **PyTorch** and **Facenet-PyTorch**, trained and eval
         - F1 Score
         - Confusion Matrix
      
-📌 **Task B** \
+📌 **Task B** 
 
      📈Overview: Task B Verifies identity of distorted face images by matching with clean embeddings using FaceNet (InceptionResNetV1).
      
