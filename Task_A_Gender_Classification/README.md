@@ -17,8 +17,6 @@ This model classifies images into two genders: Male or Female. It uses a fine-tu
 - `results/`: Stores classification reports and confusion matrix
 - `model_diagram.png`: Architecture diagram
 
-## Model Diagram
-
 ## Requirements
 - Python 3.8+
 - PyTorch
@@ -60,4 +58,8 @@ python /content/drive/MyDrive/Comsys_Hackathon5/Task_A_Gender_Classification/src
 - `classification_report.txt`: Shows Accuracy, Precision, Recall, F1-Score.
 - `classification_report.json`: machine-readable report
 - `confusion_matrix.png`: Shows Visual Matrix.
+
+## Model Diagram
+![3](https://github.com/user-attachments/assets/bb187654-3ab8-4e37-8c39-c362d11c9882)
+
 
