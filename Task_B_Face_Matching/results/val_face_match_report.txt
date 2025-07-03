@@ -1,0 +1,12 @@
+Top-1 Accuracy: 80.77%
+Macro-averaged F1-Score: 44.68%
+
+Detailed Classification Report:
+              precision    recall  f1-score   support
+
+Mismatch (0)       0.00      0.00      0.00         0
+   Match (1)       1.00      0.81      0.89      2954
+
+    accuracy                           0.81      2954
+   macro avg       0.50      0.40      0.45      2954
+weighted avg       1.00      0.81      0.89      2954
