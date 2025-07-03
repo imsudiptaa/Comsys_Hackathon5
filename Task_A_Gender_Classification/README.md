@@ -17,6 +17,7 @@ This model classifies images into two genders: Male or Female. It uses a fine-tu
 - `results/`: Stores classification reports and confusion matrix
 - `model_diagram.png`: Architecture diagram
 
+## Model Diagram
 
 ## Requirements
 - Python 3.8+
