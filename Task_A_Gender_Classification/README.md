@@ -59,7 +59,7 @@ python /content/drive/MyDrive/Comsys_Hackathon5/Task_A_Gender_Classification/src
 - `classification_report.json`: machine-readable report
 - `confusion_matrix.png`: Shows Visual Matrix.
 
-## Model Diagram
+## Model Architecture
 ![3](https://github.com/user-attachments/assets/bb187654-3ab8-4e37-8c39-c362d11c9882)
 
 
