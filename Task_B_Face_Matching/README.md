@@ -63,5 +63,5 @@ python /content/drive/MyDrive/Comsys_Hackathon5/Task_B_Face_Matching/src/test_ta
 - `val_match_results.json`: Machine-readable version of results
 - `val_face_match_report.txt`: Shows Top-1 Accuracy, Macro-averaged F1-Score, Accuracy, Precision, Recall
 
-## Model Diagram
+## Model Architecture
 ![model_diagram](https://github.com/user-attachments/assets/04e25478-5171-44e0-b58c-b8a4c6b66bad)
