@@ -1,10 +1,14 @@
 # 🚀 Comsys Hackathon 2025 
 ----------------------------
+## 🌟 Team Name: Drishti
+### Team members : Sudipta Mandal (Team Leader), Khushi Kumari Gupta & Ajiti Kumari Shaw
+-----------------------------------------------------------------------------------------
 
 This repository contains solutions for two tasks:
 
 - 🎯 **Task A**: Gender Classification 
-- 🎯 **Task B**: Face Matching (Multi-Class Recognition with Distorted Inputs) 
+- 🎯 **Task B**: Face Matching (Multi-Class Recognition with Distorted Inputs)
+- Each Task folders `Task_A_Gender_Classification` & `Task_B_Face_Matching` consist separate `README.md` files containing overview, directory structure, requirements, Installation guide, Train, Evaluation, Final Test script, Outputs & Model Architecture diagram.
 
 All models are built using **PyTorch** and **Facenet-PyTorch**, trained and evaluated with robust metrics like Accuracy, Precision, Recall, and F1-Score. The codebase is fully modular, CLI-compatible, and includes pretrained weights and evaluation scripts.
 
