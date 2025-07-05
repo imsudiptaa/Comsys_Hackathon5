@@ -19,7 +19,7 @@ It uses FaceNet (InceptionResnetV1) to generate facial embeddings and compares t
 - `saved_models/`: Stores extracted clean embeddings from training set
 - `results/`: Contains similarity scores, classification reports, and evaluation metrics
 - `model_diagram.png`: Architecture diagram
-
+- `Comsys_Hackathon_TaskB.ipynb` : `.ipynb` Notebook contains scripts
 
 ## Requirements
 - Python 3.8+
@@ -39,17 +39,18 @@ pip install torch torchvision facenet-pytorch scikit-learn tqdm matplotlib Pillo
 
 ## How to Use
 
-### 1. Extract Clean Image Embeddings (from training set)
+### 1. Train
 ```bash
-python /content/drive/MyDrive/Comsys_Hackathon5/Task_B_Face_Matching/src/extract_embedding.py \
+python /content/drive/MyDrive/Comsys_Hackathon5/Task_B_Face_Matching/src/train.py \
 --train_dir "/content/drive/MyDrive/Comys_Hackathon5/Task_B/train" \
---output_path "/content/drive/MyDrive/Comsys_Hackathon5/Task_B_Face_Matching/saved_models/reference_embeddings.pt"
+--output_path "/content/drive/MyDrive/Comsys_Hackathon5/Task_B_Face_Matching/saved_models/reference_embeddings.pt" \
+--results_dir "/content/drive/MyDrive/Comsys_Hackathon5/Task_B_Face_Matching/results" 
 ```
-### 2.  Evaluate Matching on Validation Set
+### 2.  Evaluation
 ```bash
-python /content/drive/MyDrive/Comsys_Hackathon5/Task_B_Face_Matching/src/match_distorted.py
+python /content/drive/MyDrive/Comsys_Hackathon5/Task_B_Face_Matching/src/eval.py
 ```
-### 3. Final Test Script
+### 3. Run this final Test Script to see evaluation metrics
 ```bash
 python /content/drive/MyDrive/Comsys_Hackathon5/Task_B_Face_Matching/src/test_task_b.py \
 --val_path "/content/drive/MyDrive/Comys_Hackathon5/Task_B/val" \
@@ -61,7 +62,8 @@ python /content/drive/MyDrive/Comsys_Hackathon5/Task_B_Face_Matching/src/test_ta
 ## Outputs
 - `val_match_results.csv`: Shows similarity score and label for each distorted image
 - `val_match_results.json`: Machine-readable version of results
-- `val_face_match_report.txt`: Shows Top-1 Accuracy, Macro-averaged F1-Score, Accuracy, Precision, Recall
+- `val_face_match_report.txt`: Shows Top-1 Accuracy, Macro-averaged F1-Score, Accuracy, Precision, Recall of val dataset
+- `train_metrics.txt`: Shows Top-1 Accuracy, Macro-averaged F1-Score, Accuracy, Precision, Recall of train dataset
 
 ## Model Architecture
 ![model_diagram](https://github.com/user-attachments/assets/04e25478-5171-44e0-b58c-b8a4c6b66bad)

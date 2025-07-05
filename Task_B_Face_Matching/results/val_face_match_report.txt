@@ -1,5 +1,8 @@
 Top-1 Accuracy: 80.77%
 Macro-averaged F1-Score: 44.68%
+Precision: 100.00%
+Recall: 80.77%
+Accuracy: 80.77%
 
 Detailed Classification Report:
               precision    recall  f1-score   support

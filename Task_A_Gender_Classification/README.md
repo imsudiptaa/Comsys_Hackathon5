@@ -16,6 +16,7 @@ This model classifies images into two genders: Male or Female. It uses a fine-tu
 - `saved_models/`: Contains pretrained model weights
 - `results/`: Stores classification reports and confusion matrix
 - `model_diagram.png`: Architecture diagram
+- `Comsys_Hackathon_TaskA.ipynb` : `.ipynb` Notebook contains scripts
 
 ## Requirements
 - Python 3.8+
@@ -37,7 +38,10 @@ pip install matplotlib
 
 ### 1. Train
 ```bash
-python /content/drive/MyDrive/Comsys_Hackathon5/Task_A_Gender_Classification/src/train.py 
+python /content/drive/MyDrive/Comsys_Hackathon5/Task_A_Gender_Classification/src/train.py \
+--train_dir "/content/drive/MyDrive/Comys_Hackathon5/Task_A/train" \
+--save_path "/content/drive/MyDrive/Comsys_Hackathon5/Task_A_Gender_Classification/saved_models/gender_classifier_v1.pth" \
+--results_dir "/content/drive/MyDrive/Comsys_Hackathon5/Task_A_Gender_Classification/results"
 ```
 ### 2. Evaluation
 ```bash
@@ -55,7 +59,8 @@ python /content/drive/MyDrive/Comsys_Hackathon5/Task_A_Gender_Classification/src
 ```
 
 ## Outputs
-- `classification_report.txt`: Shows Accuracy, Precision, Recall, F1-Score.
+- `train_metrics.txt`:  Shows Accuracy, Precision, Recall, F1-Score of train dataset.
+- `classification_report.txt`: Shows Accuracy, Precision, Recall, F1-Score of val dataset.
 - `classification_report.json`: machine-readable report
 - `confusion_matrix.png`: Shows Visual Matrix.
 

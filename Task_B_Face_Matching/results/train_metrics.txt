@@ -1,0 +1,4 @@
+Training Top-1 Accuracy: 64.26%
+Training Precision: 72.61%
+Training Recall: 71.42%
+Training Macro F1 Score: 68.46%

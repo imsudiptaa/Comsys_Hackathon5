@@ -1,6 +1,6 @@
 import argparse
 import os
-from match_distorted import evaluate_on_val
+from eval import evaluate_on_val
 
 def main(val_path, results_dir, threshold):
     if not os.path.exists(val_path):

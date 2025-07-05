@@ -1,0 +1,4 @@
+Training Accuracy: 92.89%
+Training Precision: 95.73%
+Training Recall: 82.71%
+Training F1 Score: 87.37%

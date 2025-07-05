@@ -13,6 +13,4 @@ __pycache__/
 *.zip
 *.gz
 
-# macOS files
-.DS_Store
 
