@@ -16,34 +16,35 @@ All models are built using **PyTorch** and **Facenet-PyTorch**, trained and eval
 
 ## 📁 Repository Structure
 **Comsys_Hackathon5**\
-├──```Task_A_Gender_Classification```\
-│ ├── src\
+├──```Task_A_Gender_Classification``` (⚛ Contains solutions of Task A) <br>
+│├── src (⚛ Contains all source codes of Task A) \
 │ │ ├── train.py\
 │ │ ├── eval.py\
 │ │ └── test_task_a.py\
-│ ├── saved_models\
+│ ├── saved_models (⚛ Contains model weights of Task A )\
 │ │ └── gender_classifier_v1.pth\
-│ ├── results\
+│ ├── results (⚛ Contains Evaluation metrics of Task A )\
 │ │ ├── classification_report.txt\
 │ │ ├── classification_report.json\
 │ │ └── confusion_matrix.png\
-│ └── model_diagram.png\
-| └── README.md\
-├──```Task_B_Face_Matching```\
-│ ├── src\
+│ └── model_diagram.png (⚛ Contains model architecture of Task A )\
+| └── README.md (⚛ Contains detailed `Readme.md` file of Task A )\
+├──```Task_B_Face_Matching``` (💠 Contains solutions of Task B ) <br>
+│ ├── src (💠 Contains source codes of Task B )\
 │ │ ├── extract_embedding.py\
 │ │ ├── match_distorted.py\
 │ │ └── test_task_b.py\
-│ ├── saved_models\
+│ ├── saved_models (💠 Contains model weights of Task B )\
 │ │ └── reference_embeddings.pt\
-│ ├── results\
+│ ├── results (💠 Contains evaluation metrics of Task B )\
 │ │ ├── val_match_results.json\
 │ │ ├── val_match_results.csv\
 │ │ ├── val_face_match_report.txt\
-| └── README.md\
-│ └── model_diagram.png\
-└── README.md\
+| └── README.md (💠 Contains detailed `Readme.md` file of Task B )\
+│ └── model_diagram.png (💠 Contains model architecture of Task B )\
+└── README.md (🏀`Readme.md` file of root repo)\
 └── .gitattributes
+└── Technical Summmary.png (🏀 Contains Technical Summary of the tasks)
 
 
  📌 **Task A** 
