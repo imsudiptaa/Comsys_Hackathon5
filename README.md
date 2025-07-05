@@ -72,9 +72,6 @@ All models are built using **PyTorch** and **Facenet-PyTorch**, trained and eval
   ![Screenshot 2025-07-05 202844](https://github.com/user-attachments/assets/526c611c-735d-49a2-8b7f-55e795d5f4b8)
 
   
-  ## 🧠 Model Architecture Diagrams
-  Each task folder includes a `model_diagram.png` file to visualize the architecture.
-     
   ## 📎 Dataset Download Link
   Since dataset files are large, you can download them from Google Drive:
   https://drive.google.com/drive/folders/1lRW5ipuIjo7z2LDiLfumhFIbOies2_7A?usp=drive_link
